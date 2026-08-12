@@ -965,3 +965,174 @@ body {
   text-decoration: underline;
   color: #375979;
 }
+
+
+
+/* ---------------------footer---------------------- */
+footer {
+    background: linear-gradient(
+        to bottom,
+        #eef5fb 0%,
+        #dceaf5 50%,
+        #c9ddec 100%
+    );
+}
+
+.footer-logo {
+  height: auto;
+  width: 100px;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+    width: 100%;
+
+    background-color: #dce8f2;
+
+   padding-top: 30px;
+   padding-bottom: 30px;
+
+    box-sizing: border-box;
+}
+
+
+/* Hovedindhold */
+
+.footer-inner {
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+
+/* ========================================
+   VENSTRE - NAVIGATION
+======================================== */
+/* Logo */
+
+.footer-logo {
+    width: 130px;
+
+    height: auto;
+}
+
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+
+
+/* ========================================
+   MIDTEN - KONTAKT
+======================================== */
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    gap: 8px;
+}
+
+.footer-contact h4 {
+    margin: 0 0 8px;
+
+    font-size: 20px;
+    font-family: var(--font-family);
+
+    color: var(--text-color);
+}
+
+.footer-contact a {
+    color: var(--text-color);
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+    font-family: var(--font-family);
+    font-size: var(--xs-font-size);
+    font-weight: var(--p-font-weight);
+}
+
+.footer-contact a:hover {
+    color: #6689a8;
+}
+
+
+/* ========================================
+   HØJRE - LOGO + SOCIALE MEDIER
+======================================== */
+
+.footer-right {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 20px;
+}
+
+.footer-right a{
+  
+    color: #222;
+
+    text-decoration: none;
+
+    font-family: var(--font-family);
+
+    font-size: 16px;
+
+    transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+    color: #6689a8;
+}
+
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 800px) {
+
+    .footer {
+        padding: 45px 30px 20px;
+    }
+
+    .footer-inner {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .footer-nav {
+        align-items: center;
+    }
+
+    .footer-right {
+        align-items: center;
+    }
+
+}

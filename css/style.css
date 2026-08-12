@@ -625,7 +625,6 @@ footer {
     margin-top: -30px;
 }
 
-
 .contact-body {
   background-color: var(--secondary-color);
 }
@@ -659,8 +658,6 @@ footer {
 
 .contact-header h4 {
   margin-bottom: -20px;
-  
-  
 }
 
 .contact-section {
@@ -714,6 +711,15 @@ footer {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
+.contact-cards a {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: var(--p-font-weight);
+  font-size: var(--xs-font-size);
+
+  padding-left: 20px;
+}
 
 /* Første card */
 .contact-cards:nth-of-type(2) {
@@ -787,53 +793,643 @@ footer {
 
 /* --------------------om mig----------------------- */
 
-.interests {
+.about-me {
+      padding-top: 30px;
+      
+}
+
+.layers-image img {
     width: 100%;
-    margin-top: 40px;
+    max-width: 450px;
 
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
 }
 
-.interests h4 {
-   text-align: start;
+.layers-image img.change {
+    opacity: 0;
+    transform: scale(0.97);
 }
 
 
+.back-button {
+    display: none;
 
+    margin-top: 30px;
+    padding: 10px 0;
 
+    background: none;
+    border: none;
 
-.interest-list {
-    display: flex;
-    grid-template-columns: repeat(4, 1fr);
+    color: #6689a8;
+
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    width: fit-content;
+
+    transition: 0.3s ease;
+}
+
+.back-button:hover {
+    transform: translateX(-5px);
+}
+
+/* ========================================
+   LAGENE AF MIG
+======================================== */
+
+.about-layers {
     width: 100%;
-    gap: 60px;
-    align-items: flex-start;
+    max-width: 1500px;
+
+    margin: -30px auto 0;
+    padding: 30px 70px 40px;
+    
+
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 1.35fr;
+    align-items: center;
+    gap: 70px;
+
+    background-color: var(--primary-color);
+
+    box-sizing: border-box;
 }
 
-.interest-item {
+
+/* ========================================
+   VENSTRE SIDE
+======================================== */
+
+.layers-menu {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    justify-content: center;
+    padding-left: 30px;
+  
 }
 
 
-.interest-item img {
-    width: 55px;
-    height: 55px;
-    object-fit: contain;
-    margin-bottom: 12px;
+/* Lille blå tekst */
+
+.small-title {
+    margin: 0 0 15px;
+
+    color: #6687a5;
+
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--font-family);
+
+    letter-spacing: 3px;
 }
 
-.interest-item p {
-    margin: 0;
-    width: 100%;
-    text-align: center;
-    font-size: var(--xs-font-size);
-    color: var(--text-color);
+
+/* Overskrift */
+
+.layers-menu h2 {
+    margin: 0 0 20px;
+
+    font-family: var(--font-family);
+    font-size: 58px;
+    line-height: 0.95;
+    font-weight: 600;
+
+    color: #111;
+}
+
+
+/* Intro tekst */
+
+.intro-text {
+    max-width: 270px;
+
+    margin: 0 0 35px;
+
+    font-size: var(--s-font-size);
     font-family: var(--font-family);
     font-weight: var(--p-font-weight);
-    letter-spacing: 1px;
+    line-height: 1.6;
+
+    color: var(--text-color);
 }
+
+
+/* ========================================
+   LAG-KNAPPER
+======================================== */
+
+.about-layers {
+    width: 100%;
+    max-width: 1500px;
+
+    margin: -30px auto 0;
+    padding: 30px 90px 90px;
+
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 1.35fr;
+    align-items: center;
+    gap: 70px;
+
+    background-color: var(--primary-color);
+
+    box-sizing: border-box;
+}
+
+.layer-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    width: 100%;
+    max-width: 330px;
+}
+
+
+/* Selve knappen */
+
+.layer-btn {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 11px 18px;
+
+    border: none;
+    border-radius: 40px;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* Ikon */
+
+.layer-btn img {
+    width: 46px;
+    height: 46px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+
+/* Nummer + tekst */
+
+.layer-btn div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+
+/* Nummer */
+
+.layer-btn span {
+    font-size: 14px;
+    color: #6687a5;
+
+    font-weight: 500;
+    font-family: var(--font-family);
+}
+
+
+/* Titel */
+
+.layer-btn strong {
+    font-size: var(--xs-font-size);
+    font-weight: var(--h-font-weight);
+    font-family: var(--font-family);
+
+    color: #243c52;
+}
+
+
+/* Hover */
+
+.layer-btn:hover {
+    transform: translateX(5px);
+}
+
+/* Aktiv tekst */
+
+.layer-btn.active span,
+.layer-btn.active strong {
+    color: var(--text-color);
+}
+
+/* 01 - Mig som person */
+.layer-btn:nth-child(1).active {
+    background-color: #EFD2D0;
+}
+
+
+/* 02 - Mig som designer */
+.layer-btn:nth-child(2).active {
+    background-color: #A7BCCF;
+}
+
+
+/* 03 - Mig i udvikling */
+.layer-btn:nth-child(3).active {
+    background-color: #E3C991;
+}
+
+
+/* ========================================
+   BILLEDE / MIDTERSTE DEL
+======================================== */
+
+.layers-image {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Polaroid */
+
+.layers-image img {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 430px;
+
+    padding: 15px 15px 80px;
+
+    
+
+    transform: rotate(-4deg);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* Når billedet skifter */
+
+.layers-image img.change {
+    opacity: 0;
+    transform: rotate(-4deg) scale(0.96);
+}
+
+
+
+
+/* ========================================
+   HØJRE SIDE
+======================================== */
+
+.layers-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-width: 600px;
+
+    transition: opacity 0.3s ease;
+    padding-right: 30px;
+    
+}
+
+
+/* Nummer */
+
+.layer-number {
+    margin: 0 0 8px;
+
+    font-size: 25px;
+    font-weight: 500;
+    font-family: var(--font-family);
+
+    color: #a96b69;
+
+    letter-spacing: 2px;
+}
+
+
+/* Overskrift */
+
+.layers-content h2 {
+    margin: 0;
+
+    font-family: var(--font-family);
+    font-weight: var(--h-font-weight);
+    font-size: var(--m-font-size);
+    line-height: 1.05;
+    
+
+    color: var(--text-color);
+}
+
+
+/* Lille streg */
+
+.blue-line {
+    width: 75px;
+    height: 3px;
+
+    margin: 25px 0 35px;
+
+    background-color: var(--secondary-color);
+}
+
+
+/* Brødtekst */
+
+#layer-text {
+    max-width: 550px;
+
+    margin: 0 0 45px;
+
+    font-size: var(--s-font-size);
+    font-family: var(--font-family);
+    font-weight: var(--p-font-weight);
+    line-height: 1.7;
+
+    color: #252525;
+}
+
+
+.contact-btn a{
+   font-size: var(--s-font-size);
+  text-decoration: none;
+  color: var(--text-color);
+  display: flex;
+  justify-self: center;
+  padding: 24px 56px;
+  border-radius: 25px;
+  background-color: var(--secondary-color);
+  margin-bottom: 50px;
+  font-weight: var(--p-font-weight);
+    font-family: var(--font-family);
+}
+
+.contact-btn a:hover {
+  
+  background-color: #6587a7;
+  
+}
+
+
+/* ========================================
+   TILBAGE-KNAP
+======================================== */
+
+.back-button {
+    display: none;
+
+    width: fit-content;
+
+    margin-top: 10px;
+
+    padding: 10px 0;
+
+    border: none;
+    background: none;
+
+    color: #6687a5;
+
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease;
+}
+
+
+.back-button:hover {
+    transform: translateX(-5px);
+
+    color: #4f708e;
+}
+
+
+/* ========================================
+   STARTSTATE
+======================================== */
+
+.about-layers.start-state .layer-number {
+    color: #6687a5;
+}
+
+.about-layers.start-state .blue-line {
+    background-color: #6687a5;
+}
+
+
+/* ========================================
+   DE TRE FORSKELLIGE LAG
+======================================== */
+
+/* 01 – Personlighed */
+
+.about-layers.person-state .layer-btn.active {
+    background-color: #efd2d0;
+}
+
+.about-layers.person-state .layer-number,
+.about-layers.person-state .blue-line {
+    background-color: #a96b69;
+}
+
+.about-layers.person-state .layer-number {
+    color: #a96b69;
+}
+
+
+/* 02 – Designer */
+
+.about-layers.designer-state .layer-btn.active {
+    background-color: #d8e3ed;
+}
+
+.about-layers.designer-state .layer-number {
+    color: #6687a5;
+}
+
+.about-layers.designer-state .blue-line {
+    background-color: #6687a5;
+}
+
+
+/* 03 – Udvikling */
+
+.about-layers.udvikling-state .layer-btn.active {
+    background-color: #dce5dc;
+}
+
+.about-layers.udvikling-state .layer-number {
+    color: #718c73;
+}
+
+.about-layers.udvikling-state .blue-line {
+    background-color: #718c73;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 1100px) {
+
+    .about-layers {
+        grid-template-columns: 0.8fr 0.9fr 1.2fr;
+
+        gap: 35px;
+
+        padding: 60px 40px;
+    }
+
+    .layers-menu h2 {
+        font-size: 48px;
+    }
+
+    .layers-content h2 {
+        font-size: 42px;
+    }
+
+    .layers-image img {
+        max-width: 350px;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .about-layers {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+        padding: 60px 30px;
+    }
+
+
+    /* Venstre */
+
+    .layers-menu {
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    .intro-text {
+        max-width: 400px;
+    }
+
+
+    .layer-buttons {
+        max-width: 400px;
+    }
+
+
+    /* Billede */
+
+    .layers-image {
+        order: 2;
+    }
+
+
+    .layers-image img {
+        max-width: 350px;
+    }
+
+
+    /* Tekst */
+
+    .layers-content {
+        order: 3;
+
+        max-width: 600px;
+
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+
+    .blue-line {
+        margin: 20px auto 30px;
+    }
+
+
+    #layer-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .back-button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .about-layers {
+        padding: 45px 20px;
+    }
+
+
+    .layers-menu h2 {
+        font-size: 42px;
+    }
+
+
+    .layers-content h2 {
+        font-size: 36px;
+    }
+
+
+    .layers-image img {
+        max-width: 290px;
+    }
+
+
+    .layer-btn {
+        padding: 9px 15px;
+    }
+
+
+    .layer-btn img {
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+
 
 /* ---------------------footer---------------------- */
 footer {
@@ -843,4 +1439,163 @@ footer {
         #dceaf5 50%,
         #c9ddec 100%
     );
+}
+
+.footer-logo {
+  height: auto;
+  width: 100px;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+    width: 100%;
+
+    background-color: #dce8f2;
+
+   padding-top: 30px;
+   padding-bottom: 30px;
+
+    box-sizing: border-box;
+}
+
+
+/* Hovedindhold */
+
+.footer-inner {
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+
+/* ========================================
+   VENSTRE - NAVIGATION
+======================================== */
+/* Logo */
+
+.footer-logo {
+    width: 130px;
+
+    height: auto;
+}
+
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+
+
+/* ========================================
+   MIDTEN - KONTAKT
+======================================== */
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    gap: 8px;
+}
+
+.footer-contact h4 {
+    margin: 0 0 8px;
+
+    font-size: 20px;
+    font-family: var(--font-family);
+
+    color: var(--text-color);
+}
+
+.footer-contact a {
+    color: var(--text-color);
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+    font-family: var(--font-family);
+    font-size: var(--xs-font-size);
+    font-weight: var(--p-font-weight);
+}
+
+.footer-contact a:hover {
+    color: #6689a8;
+}
+
+
+/* ========================================
+   HØJRE - LOGO + SOCIALE MEDIER
+======================================== */
+
+.footer-right {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 20px;
+}
+
+.footer-right a{
+  
+    color: #222;
+
+    text-decoration: none;
+
+    font-family: var(--font-family);
+
+    font-size: 16px;
+
+    transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+    color: #6689a8;
+}
+
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 800px) {
+
+    .footer {
+        padding: 45px 30px 20px;
+    }
+
+    .footer-inner {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .footer-nav {
+        align-items: center;
+    }
+
+    .footer-right {
+        align-items: center;
+    }
+
 }

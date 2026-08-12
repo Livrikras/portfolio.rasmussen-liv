@@ -159,56 +159,113 @@
         </div>
     </section>
     
+
+    <!-- -----------------------Om mig------------------------- -->
     <section class="about-me">
         <h4>Lidt om mig</h4>
-        <h2>Mig</h2>
-        <p>Hej mit navn er Liv Riksted Rasmussen</p>
-        <img src="img/about-me.png" alt="">
         
-        <div class="contact-btn">
-            <a href="kontakt.html">Kontakt mig →</a>
-        </div>
+    <section class="about-layers">
 
-        <div class="interests">
-            <h4>Mine interesser</h4>
-            <div class="interest-list">
+        <!-- VENSTRE -->
+        <div class="layers-menu">
 
-                <div class="interest-item">
-                    <img src="img/travel-icon.png" alt="Rejse ikon">
-                    <h5>Rejse</h5>
-                    <p>Jeg elsker at opleve<br>nye steder og lade mig<br>inspirere af andre kulturer.</p>
-                </div>
+            <p class="small-title">Multimediedesigner</p>
 
-                <div class="interest-item">
-                    <img src="img/hockey-icon.png" alt="Ishockey ikon">
-                    <h5>Ishockey</h5>
-                    <p>Ishockey er en stor interesse for mig.<br>Jeg følger med i dansk ishockey og elsker<br>at tage til kampe og være en del af stemningen.</p>
-                </div>
+            <h2>Lagene<br>af mig</h2>
 
-                <div class="interest-item">
-                    <img src="img/ff-icon.png" alt="hjerte ikon">
-                    <h5>Venner & familie</h5>
-                    <p>Jeg bruger min fritid<br>sammen med min familie og venner, hvor vi hygger<br>os, og laver forskellige sjove ting.</p>
-                </div>
+            <p class="intro-text">Lær mig bedre at kende gennem tre sider af mig.</p>
 
-                <div class="interest-item">
-                    <img src="img/design-icon.png" alt="design ikon">
-                    <h5>Design/kreativ</h5>
-                    <p>Jeg elsker at være kreativ på mange forskellige måder, <br>om det er at hækle, sy, designe på computeren <br>eller mange andre ting.</p>
-                </div>
+            <div class="layer-buttons">
 
+                <button class="layer-btn" data-layer="person">
+                    <img src="img/heart.png" alt="">
+                    <div>
+                        <span>01</span>
+                        <strong>Mig som person</strong>
+                    </div>
+                </button>
+
+                <button class="layer-btn" data-layer="designer">
+                    <img src="img/krea.png" alt="">
+                    <div>
+                        <span>02</span>
+                        <strong>Mig som designer</strong>
+                    </div>
+                </button>
+
+                <button class="layer-btn" data-layer="udvikling">
+                    <img src="img/brain.png" alt="">
+                    <div>
+                        <span>03</span>
+                        <strong>Mig i udvikling</strong>
+                    </div>
+                </button>
+
+                <button id="back-button" class="back-button"> ← Tilbage</button>
             </div>
+
         </div>
+
+
+        <!-- BILLEDE -->
+        <div class="layers-image">
+            <img id="about-image" src="img/ab-me1.png" alt="Om mig">
+        </div>
+
+
+        <!-- TEKST -->
+        <div class="layers-content">
+
+            <span id="layer-number"></span>
+
+            <h2 id="layer-title">
+                Lær mig at kende
+            </h2>
+
+            <div class="blue-line"></div>
+
+            <p id="layer-text">
+                Som person og multimediedesigner har jeg mange lag som du kan dykke ned i.
+            </p>
+
+            <div class="contact-btn">
+                <a href="kontakt.html">Kontakt mig her</a>
+            </div>
+
+        </div>
+
     </section>
 
+        
     
-    <footer>
-        <img src="img/lrr-logo.png" alt="lrr logo" class="footer-logo">
-        <div class="contact-info">
-            <h2>Kontakt</h2>
-            <p>Har du spørgsmål eller ønsker at samarbejde? Kontakt mig!</p>
-            <p>Telefon: 23863999</p>
-            <p>E-mail: </p>
+        
+
+
+    
+
+    <footer class="footer">
+
+        <div class="footer-inner">
+
+            <!-- VENSTRE: NAVIGATION -->
+            <div class="footer-nav">
+                <a href="index.html"><img src="img/lrr-logo.png" alt="LRR logo" class="footer-logo"></a>
+            </div>
+
+            <!-- MIDTEN: KONTAKT -->
+            <div class="footer-contact">
+                <h4>Kontakt mig</h4>
+                <a href="mailto:livrikras@icloud.com">livrikras@icloud.com</a>
+                <a href="tel:+4523863999">+45 23 86 39 99</a>
+            </div>
+
+
+            <!-- HØJRE: LOGO + SOCIALE MEDIER -->
+            <div class="footer-right">
+                <a href="index.html">Forside</a>
+                <a href="projekter.html">Mine projekter</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
         </div>
     </footer>
     
