@@ -88,6 +88,59 @@
     background: #c7b895;
 }
 
+/* =========================
+   MOBIL
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo img {
+        width: 105px;
+    }
+
+    .navbar-links {
+        gap: 25px;
+        margin-right: 0;
+        font-size: 14px;
+    }
+
+    .navbar-links a::after {
+        bottom: -5px;
+        height: 1.5px;
+    }
+
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+
+    .navbar {
+        padding: 16px 30px;
+    }
+
+    .logo img {
+        width: 125px;
+    }
+
+    .navbar-links {
+        gap: 60px;
+        margin-right: 30px;
+        font-size: 16px;
+    }
+
+    .navbar-links a::after {
+        bottom: -7px;
+    }
+}
+
+
 /* -------------------Individuelle Projekter------------------------- */
 /* -------------------Projekt 1-------------------------- */
 .ovartaci-description p {
@@ -310,6 +363,164 @@
 .show-room {
     background-color: var(--secondary-color);
     padding-bottom: 50px;
+}
+
+/* =========================
+   MOBIL
+========================= */
+
+@media (max-width: 768px) {
+
+    .ovartaci-description {
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .ovartaci-description p {
+        font-size: var(--xs-font-size);
+        line-height: 1.6;
+    }
+
+    .ovartaci-description h3 {
+        font-size: var(--m-font-size);
+    }
+
+    .ovartaci-logo {
+        width: 260px;
+        max-width: 80%;
+        margin: 0 auto 20px;
+    }
+
+
+    /* IPAD */
+
+    .ipad {
+        height: auto;
+        width: fit-content;
+        margin: 0 auto 40px;
+    }
+
+    .ipad-img {
+        height: 300px;
+        width: auto;
+    }
+
+    .screen-video-3 {
+        height: 280px;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+
+    /* OVARTACI 1, 2 OG 3 */
+
+    .ovartaci-1,
+    .ovartaci-2,
+    .ovartaci-3 {
+
+        width: 90%;
+        max-width: 600px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        margin: 60px auto;
+    }
+
+
+    /* TEKST */
+
+    .ovartaci-1-text,
+    .ovartaci-2-text,
+    .ovartaci-3-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .ovartaci-1 h3,
+    .ovartaci-2 h3,
+    .ovartaci-3 h3 {
+        font-size: var(--m-font-size);
+        margin-bottom: 18px;
+    }
+
+    .ovartaci-1 p,
+    .ovartaci-2 p,
+    .ovartaci-3 p {
+        font-size: var(--xs-font-size);
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+
+    /* BILLEDER */
+
+    .ovartaci-1-img,
+    .ovartaci-2-img,
+    .ovartaci-3-img {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+
+    /* OVARTACI 4 */
+
+    .ovartaci-4 {
+        width: 90%;
+        max-width: 600px;
+        margin: 60px auto;
+        text-align: center;
+    }
+
+    .ovartaci-4 h3 {
+        font-size: var(--m-font-size);
+    }
+
+    .ovartaci-4-img {
+        width: 80%;
+        max-width: 400px;
+        padding-top: 20px;
+        margin: 0 auto;
+    }
+
+    .ovartaci-4 p {
+        font-size: var(--xs-font-size);
+        line-height: 1.6;
+        text-align: left;
+    }
+
+
+    /* OVARTACI 5 */
+
+    .ovartaci-5-img {
+        width: 80%;
+        max-width: 350px;
+        padding: 10px;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    /* SHOWROOM */
+
+    .show-room {
+        padding-bottom: 35px;
+    }
+
+    .show-room h3 {
+        font-size: var(--m-font-size);
+        padding-top: 35px;
+    }
+
+    .ovartaci-show {
+        width: 90%;
+        max-width: 600px;
+        margin: 25px auto 0;
+    }
+
 }
 
 /* -------------------Projekt 2------------------------- */
@@ -638,46 +849,243 @@ body {
   line-height: 1.2;
 }
 
-/* ================================
-   RESPONSIV
-================================ */
+/* =========================
+   MOBIL
+========================= */
 
-@media (max-width: 900px) {
-  .haze-3 {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
+@media (max-width: 768px) {
 
-  .haze-img3 {
-    grid-column: 1;
-    grid-row: 1;
+    /* LAPTOP */
 
-    width: 100%;
-    max-width: 620px;
+    .laptop {
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
 
-    margin: 0 auto;
-  }
+    .laptop img {
+        width: 100%;
+        height: auto;
+    }
 
-  .haze-3 > h3 {
-    grid-column: 1;
-    grid-row: 2;
-  }
+    .screen-video {
+        top: 0;
+        left: 10%;
+        width: 80%;
+        height: 90%;
+        border-radius: 6px;
+    }
 
-  .haze-3 > p:nth-of-type(1) {
-    grid-column: 1;
-    grid-row: 3;
-  }
 
-  .haze-3 > p:nth-of-type(2) {
-    grid-column: 1;
-    grid-row: 4;
-  }
+    /* LOGO SECTION */
 
-  .haze-designproces {
-    grid-column: 1;
-    grid-row: 5;
-  }
+    .logo-section {
+        padding: 35px 20px;
+    }
+
+    .haze-logo {
+        width: 260px;
+        max-width: 80%;
+        margin-bottom: 15px;
+    }
+
+    .logo-section p {
+        font-size: var(--xs-font-size);
+        text-align: center;
+        line-height: 1.5;
+    }
+
+
+    /* DESCRIPTION */
+
+    .haze-description {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .haze-description h3 {
+        font-size: var(--m-font-size);
+        line-height: 1.2;
+    }
+
+    .haze-description p,
+    .haze-description ul li {
+        font-size: var(--xs-font-size);
+        line-height: 1.6;
+    }
+
+    .haze-description ul {
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    .haze-description ul li {
+        padding: 6px 10px;
+    }
+
+
+    /* HAZE 1 */
+
+    .haze-1 {
+        width: 90%;
+        max-width: 600px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+        margin: 60px auto;
+    }
+
+    .haze-1-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .haze-1 h3 {
+        font-size: var(--m-font-size);
+        margin-bottom: 15px;
+    }
+
+    .haze-1 p {
+        font-size: var(--xs-font-size);
+        line-height: 1.6;
+    }
+
+    .haze-img1 {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+
+    /* HAZE 2 */
+
+    .haze-2 {
+        width: 90%;
+        max-width: 600px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+        margin: 60px auto;
+    }
+
+    .haze-2-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .haze-2 h3 {
+        font-size: var(--m-font-size);
+        margin-bottom: 15px;
+    }
+
+    .haze-2 p {
+        font-size: var(--xs-font-size);
+        line-height: 1.6;
+    }
+
+    .haze-img2 {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+
+    /* HAZE 3 */
+
+    .haze-3 {
+        width: 90%;
+        max-width: 600px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+        margin: 60px auto;
+    }
+
+    /* BILLEDE */
+
+    .haze-img3 {
+        grid-column: 1;
+        grid-row: auto;
+
+        width: 100%;
+        max-width: 500px;
+
+        margin: 0 auto;
+
+        border-radius: 12px;
+    }
+
+    /* OVERSKRIFT */
+
+    .haze-3 > h3 {
+        grid-column: 1;
+        grid-row: auto;
+
+        font-size: var(--m-font-size);
+        text-align: center;
+
+        margin: 0 0 10px;
+    }
+
+    /* TEKST */
+
+    .haze-3 > p:nth-of-type(1),
+    .haze-3 > p:nth-of-type(2) {
+
+        grid-column: 1;
+        grid-row: auto;
+
+        max-width: 100%;
+
+        font-size: var(--xs-font-size);
+        line-height: 1.6;
+
+        text-align: center;
+    }
+
+
+    /* DESIGNPROCES */
+
+    .haze-designproces {
+        grid-column: 1;
+        grid-row: auto;
+
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .haze-design {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .design-steps {
+        width: 100%;
+        max-width: 500px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        gap: 5px;
+
+        margin-top: 15px;
+    }
+
+    .design-steps span {
+        font-size: var(--xs-font-size);
+        line-height: 1.2;
+    }
+
 }
+
 
 /* haze 4 */
 
@@ -710,6 +1118,46 @@ body {
   
   background-color: #6587a7;
   
+}
+
+/* =========================
+   HAZE 4 - MOBIL
+========================= */
+
+@media (max-width: 768px) {
+
+    .haze-4 {
+        width: 90%;
+        max-width: 600px;
+        margin: 60px auto;
+    }
+
+    .haze-4 ul {
+        margin-top: 30px;
+        padding-left: 20px;
+    }
+
+    .haze-4 li {
+        font-size: var(--xs-font-size);
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+
+    .link-haze {
+        font-size: var(--xs-font-size);
+
+        padding: 16px 30px;
+
+        margin: 50px auto;
+
+        width: fit-content;
+        max-width: 90%;
+
+        text-align: center;
+
+        border-radius: 20px;
+    }
+
 }
 
 /* --------------------Projekt 3----------------------- */
@@ -966,7 +1414,222 @@ body {
   color: #375979;
 }
 
+/* =========================
+   NORD - MOBIL
+========================= */
 
+@media (max-width: 768px) {
+
+    /* DESCRIPTION */
+
+    .nord-description {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .nord-description h3 {
+        font-size: var(--m-font-size);
+    }
+
+    .nord-description p {
+        font-size: var(--xs-font-size);
+        line-height: 1.6;
+    }
+
+    .nord-logo {
+        width: 260px;
+        max-width: 80%;
+        margin: 0 auto 20px;
+    }
+
+
+    /* TOUCH */
+
+    .touch {
+        width: fit-content;
+        height: auto;
+        margin: 0 auto 40px;
+    }
+
+    .touch-img {
+        height: 350px;
+        width: auto;
+    }
+
+    .screen-video-2 {
+        top: 2%;
+        width: 100%;
+        height: 220px;
+        border-radius: 15px;
+    }
+
+
+    /* NORD 1 */
+
+    .nord-1 {
+        width: 90%;
+        max-width: 600px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+        margin: 60px auto;
+    }
+
+    .nord-1-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .nord-1 h3 {
+        font-size: var(--m-font-size);
+        margin-bottom: 15px;
+    }
+
+    .nord-1 p {
+        font-size: var(--xs-font-size);
+        line-height: 1.6;
+    }
+
+    .nord-1-img {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+
+    /* NORD 2 */
+
+    .nord-2 {
+        width: 90%;
+        max-width: 600px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+        margin: 60px auto;
+    }
+
+    .nord-2-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .nord-2 h3 {
+        font-size: var(--m-font-size);
+        margin-bottom: 15px;
+    }
+
+    .nord-2 p {
+        font-size: var(--xs-font-size);
+        line-height: 1.6;
+    }
+
+    .nord-2 ul {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .nord-2 ul li {
+        font-size: var(--xs-font-size);
+        line-height: 1.5;
+        margin-bottom: 8px;
+    }
+
+    .nord-2-img {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+
+    /* NORD 3 */
+
+    .nord-3 {
+        width: 90%;
+        max-width: 600px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+        margin: 60px auto;
+    }
+
+    .nord-3-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .nord-3 h3 {
+        font-size: var(--m-font-size);
+        margin-bottom: 15px;
+    }
+
+    .nord-3 p {
+        font-size: var(--xs-font-size);
+        line-height: 1.6;
+    }
+
+    .nord-3-img {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+
+    /* NORD 4 */
+
+    .nord-4 {
+        width: 90%;
+        max-width: 600px;
+        margin: 60px auto;
+        text-align: center;
+    }
+
+    .nord-4 h3 {
+        font-size: var(--m-font-size);
+    }
+
+    .nord-4 ul {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .nord-4 ul li {
+        margin: 15px 0;
+        font-size: var(--xs-font-size);
+        line-height: 1.6;
+    }
+
+
+    /* KNAPPER */
+
+    .back-btn {
+        width: 90%;
+        margin: 0 auto;
+        font-size: var(--xs-font-size);
+    }
+
+    .project-nav {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 35px;
+
+        padding: 0 20px;
+
+        box-sizing: border-box;
+    }
+
+    .prev-btn,
+    .next-btn {
+        font-size: var(--xs-font-size);
+    }
+
+}
 
 /* ---------------------footer---------------------- */
 footer {
