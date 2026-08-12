@@ -1,0 +1,967 @@
+:root {
+  --text-color: #191919;
+  --xs-font-size: 15px;
+  --s-font-size: 20px;
+  --m-font-size: 35px;
+  --xl-font-size: 95px;
+  --hero-text-color: #eadcbd;
+  --secondary-color: #b8cadb;
+  --primary-color: #fbfaf3;
+  --font-family: 'roboto', sans-serif;
+  --p-font-weight: 200;
+  --h-font-weight: 700;
+}
+
+    @import url("https://fonts.google.com/share?selection.family=Roboto:ital,wght@0,100..900;1,100..900");
+
+/* -----------------------------Header--------------------------- */
+.navbar {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1450px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  padding: 18px 45px;
+
+  background: linear-gradient(
+    to bottom,
+    #fbfaf3 0%,
+    #f8f7f1 30%,
+    #e8edf0 60%,
+    #b8cadb 100%
+  );
+
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.15),
+    0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+  font-size: var(--s-font-size);
+  margin-right: 80px;
+  font-family: var(--font-family);
+}
+
+.navbar-links li {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: var(--text-color);
+  position: relative;
+}
+
+.navbar-links li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+.navbar-links a {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Streg under den aktive side */
+.navbar-links a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 2px;
+    background: #c7b895;
+}
+
+/* -------------------Individuelle Projekter------------------------- */
+/* -------------------Projekt 1-------------------------- */
+.ovartaci-description p {
+  font-size: var(--s-font-size);
+  font-family: var(--font-family);
+  font-weight: var(--p-font-weight);
+}
+
+.ovartaci-description h3 {
+  font-size: var(--m-font-size);
+  font-family: var(--font-family);
+  font-weight: var(--h-font-weight);
+}
+
+.ovartaci-logo {
+  width: 400px;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.ipad {
+  position: relative;
+  width: fit-content;
+  height: 450px;
+  margin: 0 auto;
+}
+
+.ipad-img {
+  display: block;
+  height: 400px;
+  width: auto;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.screen-video-3 {
+  position: absolute;
+  top: 1%;
+
+  width: 100%;
+  height: 380px;
+
+  object-fit: cover;
+  border-radius: 30px;
+  z-index: 1;
+}
+
+/* ovartaci 1 */
+.ovartaci-1 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 80px auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+/* TEKST */
+.ovartaci-1-text {
+  max-width: 550px;
+}
+
+.ovartaci-1 h3 {
+  margin: 0 0 25px;
+  font-size: var(--m-font-size);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.ovartaci-1 p {
+  margin: 0 0 20px;
+  font-size: var(--s-font-size);
+  line-height: 1.7;
+}
+
+/* BILLEDE */
+.ovartaci-1-img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  display: block;
+
+  border-radius: 12px;
+}
+
+/* ovartaci 2 */
+.ovartaci-2 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 100px auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+/* TEKST */
+.ovartaci-2-text {
+  max-width: 550px;
+}
+
+.ovartaci-2 h3 {
+  margin: 0 0 25px;
+  font-size: var(--m-font-size);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.ovartaci-2 p {
+  margin: 0 0 20px;
+  font-size: var(--s-font-size);
+  line-height: 1.7;
+}
+
+/* BILLEDE */
+.ovartaci-2-img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  display: block;
+
+  border-radius: 12px;
+}
+
+/* ovartaci 3 */
+.ovartaci-3 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 100px auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+/* TEKST */
+.ovartaci-3-text {
+  max-width: 550px;
+}
+
+.ovartaci-3 h3 {
+  margin: 0 0 25px;
+  font-size: var(--m-font-size);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.ovartaci-3 p {
+  margin: 0 0 20px;
+  font-size: var(--s-font-size);
+  line-height: 1.7;
+}
+
+/* BILLEDE */
+.ovartaci-3-img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  display: block;
+
+  border-radius: 20px;
+}
+
+/* ovartaci 4*/
+.ovartaci-4 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 100px auto;
+  align-items: center;
+}
+
+.ovartaci-4 h3 {
+  text-align: center;
+  font-size: var(--m-font-size);
+}
+
+.ovartaci-4-img {
+  height: auto;
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 36px;
+}
+
+.ovartaci-4 p {
+  font-size: var(--s-font-size);
+  line-height: 36px;
+}
+
+.ovartaci-5-img {
+  height: auto;
+  width: 450px;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: center;
+}
+
+.show-room h3 {
+  font-size: var(--m-font-size);
+  text-align: center;
+  padding-top: 50px;
+
+}
+
+.ovartaci-show {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.show-room {
+    background-color: var(--secondary-color);
+    padding-bottom: 50px;
+}
+
+/* -------------------Projekt 2------------------------- */
+
+body {
+  background-color: var(--primary-color);
+}
+
+.laptop {
+  position: relative;
+  width: 700px;
+  margin: auto;
+}
+
+.laptop img {
+  width: 100%;
+  display: block;
+}
+
+.screen-video {
+  position: absolute;
+  top: 0%;
+  left: 10%;
+
+  width: 80%;
+  height: 90%;
+
+  object-fit: cover;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+/* Computeren skal ligge oven på videoen */
+.laptop img {
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+  width: 700px;
+  height: auto;
+}
+
+.pc-img {
+  width: 100%;
+  display: block;
+}
+
+.haze-logo {
+  width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.logo-section {
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  padding-top: 50px;
+  top: 0px;
+  padding-bottom: 50px;
+  flex-direction: column;
+  align-items: center;
+
+  background: linear-gradient(
+    to bottom,
+    #b8cadb 0%,
+    /* Blå starter */ #b8cadb 70%,
+    /* Holder sig blå indtil 70% */ #dfe8f1 85%,
+    /* Begynder at fade */ #fbfaf3 100% /* Helt hvid nederst */
+  );
+}
+
+.logo-section p {
+  font-size: var(--s-font-size);
+  font-family: var(--font-family);
+  font-weight: var(--p-font-weight);
+}
+
+.haze-description h3 {
+  font-size: var(--m-font-size);
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: var(--h-font-weight);
+}
+
+.haze-description p {
+  font-size: var(--s-font-size);
+  font-family: var(--font-family);
+  font-weight: var(--p-font-weight);
+}
+
+.haze-description ul li {
+  font-size: var(--s-font-size);
+  padding: 8px 36px;
+  font-family: var(--font-family);
+  font-weight: var(--p-font-weight);
+}
+
+.haze-designproces {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.haze-design {
+  width: 800px;
+  max-width: 1100px; /* gør billedet mindre */
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.design-steps {
+  width: 100%;
+  max-width: 900px; /* samme bredde som billedet */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+  font-size: var(--s-font-size);
+  font-family: var(--font-family);
+  font-weight: var(--p-font-weight);
+}
+
+/* haze 1 */
+.haze-1 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 100px auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+/* TEKST */
+.haze-1-text {
+  max-width: 550px;
+}
+
+.haze-1 h3 {
+  margin: 0 0 25px;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.haze-1 p {
+  margin: 0 0 20px;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* BILLEDE */
+.haze-img1 {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  display: block;
+
+  border-radius: 12px;
+}
+
+/* haze 2 */
+.haze-2 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 100px auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+/* TEKST */
+.haze-2-text {
+  max-width: 550px;
+}
+
+.haze-2 h3 {
+  margin: 0 0 25px;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.haze-2 p {
+  margin: 0 0 20px;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* BILLEDE */
+.haze-img2 {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  display: block;
+
+  border-radius: 12px;
+}
+
+/* haze 3 */
+.haze-3 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 100px auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 80px;
+  row-gap: 30px;
+
+  align-items: start;
+}
+
+/* ================================
+   STORT BILLEDE - HØJRE
+================================ */
+
+.haze-img3 {
+  grid-column: 2;
+  grid-row: 1 / 5;
+
+  width: 620px;
+  max-width: 100%;
+  height: auto;
+
+  display: block;
+
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+/* ================================
+   OVERSKRIFT - VENSTRE
+================================ */
+
+.haze-3 > h3 {
+  grid-column: 1;
+  grid-row: 1;
+
+  margin: 0 0 10px;
+
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+/* ================================
+   TEKST - VENSTRE
+================================ */
+
+/* Første tekst */
+.haze-3 > p:nth-of-type(1) {
+  grid-column: 1;
+  grid-row: 2;
+
+  margin: 0;
+
+  max-width: 550px;
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Anden tekst */
+.haze-3 > p:nth-of-type(2) {
+  grid-column: 1;
+  grid-row: 3;
+
+  margin: 0;
+
+  max-width: 550px;
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* ================================
+   DESIGNPROCES - VENSTRE
+================================ */
+
+.haze-designproces {
+  grid-column: 1;
+  grid-row: 4;
+
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Designproces-billede */
+
+.haze-design {
+  width: 100%;
+  max-width: 550px;
+
+  height: auto;
+  display: block;
+
+  border-radius: 12px;
+}
+
+/* ================================
+   STEPS
+================================ */
+
+.design-steps {
+  width: 100%;
+  max-width: 550px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 20px;
+}
+
+/* De enkelte steps */
+
+.design-steps span {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: var(--xs-font-size);
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* ================================
+   RESPONSIV
+================================ */
+
+@media (max-width: 900px) {
+  .haze-3 {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .haze-img3 {
+    grid-column: 1;
+    grid-row: 1;
+
+    width: 100%;
+    max-width: 620px;
+
+    margin: 0 auto;
+  }
+
+  .haze-3 > h3 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .haze-3 > p:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .haze-3 > p:nth-of-type(2) {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .haze-designproces {
+    grid-column: 1;
+    grid-row: 5;
+  }
+}
+
+/* haze 4 */
+
+.haze-4 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 100px auto;
+  align-items: center;
+}
+
+.haze-4 ul {
+  margin-top: 50px;
+}
+
+.link-haze {
+  font-size: var(--m-font-size);
+  text-decoration: none;
+  color: var(--text-color);
+  display: flex;
+  justify-self: center;
+  padding: 24px 56px;
+  border-radius: 25px;
+  background-color: var(--secondary-color);
+  margin: 100px;
+  font-weight: var(--h-font-weight);
+    font-family: var(--font-family);
+}
+
+.link-haze:hover {
+  
+  background-color: #6587a7;
+  
+}
+
+/* --------------------Projekt 3----------------------- */
+
+.nord-description p {
+  font-size: var(--s-font-size);
+  font-family: var(--font-family);
+  font-weight: var(--p-font-weight);
+}
+
+.nord-description h3 {
+  font-size: var(--m-font-size);
+  font-family: var(--font-family);
+  font-weight: var(--h-font-weight);
+}
+
+.nord-logo {
+  width: 400px;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.touch {
+  position: relative;
+  width: fit-content;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.touch-img {
+  display: block;
+  height: 600px;
+  width: auto;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.screen-video-2 {
+  position: absolute;
+  top: 2%;
+
+  width: 100%;
+  height: 380px;
+
+  object-fit: cover;
+  border-radius: 25px;
+  z-index: 1;
+}
+
+/* nord 1 */
+.nord-1 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 80px auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+/* TEKST */
+.nord-1-text {
+  max-width: 550px;
+}
+
+.nord-1 h3 {
+  margin: 0 0 25px;
+  font-size: var(--m-font-size);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.nord-1 p {
+  margin: 0 0 20px;
+  font-size: var(--s-font-size);
+  line-height: 1.7;
+}
+
+/* BILLEDE */
+.nord-1-img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  display: block;
+
+  border-radius: 12px;
+}
+
+/* nord 2 */
+.nord-2 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 100px auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+/* TEKST */
+.nord-2-text {
+  max-width: 550px;
+}
+
+.nord-2 h3 {
+  margin: 0 0 25px;
+  font-size: var(--m-font-size);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.nord-2 p {
+  margin: 0 0 20px;
+  font-size: var(--s-font-size);
+  line-height: 1.7;
+}
+
+.nord-2 ul li {
+  font-size: var(--s-font-size);
+  line-height: 30px;
+  font-family: var(--font-family);
+  font-weight: var(--p-font-weight);
+}
+
+/* BILLEDE */
+.nord-2-img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  display: block;
+
+  border-radius: 12px;
+}
+
+/* nord 3 */
+.nord-3 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 100px auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+/* TEKST */
+.nord-3-text {
+  max-width: 550px;
+}
+
+.nord-3 h3 {
+  margin: 0 0 25px;
+  font-size: var(--m-font-size);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.nord-3 p {
+  margin: 0 0 20px;
+  font-size: var(--s-font-size);
+  line-height: 1.7;
+}
+
+/* BILLEDE */
+.nord-3-img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  display: block;
+
+  border-radius: 12px;
+}
+
+/* nord 4 */
+.nord-4 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 100px auto;
+  align-items: center;
+}
+
+.nord-4 ul li {
+  margin: 28px 40px;
+  font-size: var(--s-font-size);
+  font-family: var(--font-family);
+  font-weight: var(--p-font-weight);
+}
+
+.nord-4 h3 {
+  text-align: center;
+  font-size: var(--m-font-size);
+}
+
+/* -------------Knapper-------------------- */
+
+.back-btn {
+  display: block;
+  margin-top: -20px;
+  width: 90%;
+  max-width: 1300px;
+
+  color: var(--text-color);
+  font-size: var(--s-font-size);
+
+  font-weight: var(--h-font-weight);
+  text-decoration: none;
+  font-family: var(--font-family);
+
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  gap: 15px;
+  opacity: 0.7;
+  text-decoration: underline;
+  color: #375979;
+}
+.project-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100vw;
+  max-width: 100vw;
+
+  margin-left: calc(50% - 50vw);
+  margin-top: 20px;
+  margin-bottom: 50px;
+
+
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.prev-btn,
+.next-btn {
+  color: var(--text-color);
+  font-size: var(--s-font-size);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: var(--font-family);
+  font-weight: var(--p-font-weight);
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+  color: #375979;
+}
