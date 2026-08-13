@@ -1130,19 +1130,23 @@ body {
   text-decoration: none;
   color: var(--text-color);
   display: flex;
-  justify-self: center;
-  padding: 24px 56px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+  box-sizing: border-box;
+  position: relative;
+  padding: 24px 30px;
   border-radius: 25px;
   background-color: var(--secondary-color);
-  margin: 100px;
+  margin: 100px auto;
   font-weight: var(--h-font-weight);
-    font-family: var(--font-family);
+  font-family: var(--font-family);
+  text-align: center;
 }
 
 .link-haze:hover {
-  
   background-color: #6587a7;
-  
 }
 
 /* =========================
