@@ -408,13 +408,19 @@ body{
   text-decoration: none;
   color: var(--text-color);
   display: flex;
-  justify-self: center;
-  padding: 24px 56px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 250px;
+  box-sizing: border-box;
+  position: relative;
+  padding: 24px 30px;
   border-radius: 25px;
   background-color: var(--secondary-color);
-  margin-bottom: 50px;
+  margin: 100px auto;
   font-weight: var(--p-font-weight);
-    font-family: var(--font-family);
+  font-family: var(--font-family);
+  text-align: center;
 }
 
 .all-projects-btn a:hover {
@@ -2021,18 +2027,26 @@ footer {
 
 
 .contact-btn a{
-   font-size: var(--s-font-size);
+  font-size: var(--s-font-size);
   text-decoration: none;
   color: var(--text-color);
   display: flex;
-  justify-self: center;
-  padding: 24px 56px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 250px;
+  box-sizing: border-box;
+  position: relative;
+  padding: 24px 30px;
   border-radius: 25px;
   background-color: var(--secondary-color);
-  margin-bottom: 50px;
+  margin: 100px auto;
   font-weight: var(--p-font-weight);
-    font-family: var(--font-family);
+  font-family: var(--font-family);
+  text-align: center;
 }
+
+
 
 .contact-btn a:hover {
   
