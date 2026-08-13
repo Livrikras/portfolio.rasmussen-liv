@@ -16,6 +16,32 @@ if (touch && touchVideo) {
   });
 }
 
+/* =================================
+   NORD SCROLL ANIMATION
+================================= */
+
+const nordElements = document.querySelectorAll(
+  '.nord-1, .nord-2, .nord-3, .nord-4, .link-haze'
+);
+
+const nordObserver = new IntersectionObserver((entries) => {
+
+  entries.forEach((entry) => {
+
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+
+  });
+
+}, {
+  threshold: 0.1
+});
+
+nordElements.forEach((element) => {
+  nordObserver.observe(element);
+});
+
 // ------------------ Projekt 2 ------------------
 
 const laptop = document.querySelector(".laptop");
@@ -31,6 +57,28 @@ if (laptop && video) {
     video.currentTime = 0;
   });
 }
+
+// animation
+const hazeElements = document.querySelectorAll(
+  ".haze-1, .haze-2, .haze-3, .haze-4, .link-haze",
+);
+
+const hazeObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  },
+  {
+    threshold: 0.1,
+  },
+);
+
+hazeElements.forEach((element) => {
+  hazeObserver.observe(element);
+});
 
 // ------------------ Projekt 1 ------------------
 
@@ -48,6 +96,32 @@ if (ipad && ipadVideo) {
   });
 }
 
+/* =================================
+   OVARTACI SCROLL ANIMATION
+================================= */
+
+const ovartaciElements = document.querySelectorAll(
+  '.ovartaci-1, .ovartaci-2, .ovartaci-3, .ovartaci-4, .show-room, .link-haze'
+);
+
+const ovartaciObserver = new IntersectionObserver((entries) => {
+
+  entries.forEach((entry) => {
+
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+
+  });
+
+}, {
+  threshold: 0.1
+});
+
+ovartaciElements.forEach((element) => {
+  ovartaciObserver.observe(element);
+});
+
 // ----------------------Om mig-----------------------
 
 const buttons = document.querySelectorAll(".layer-btn");
@@ -64,7 +138,6 @@ const layers = {
     number: "01",
     title: "Mig som person",
     text: "Jeg er en omsorgsfuld og ansvarsbevidst person, der møder andre med respekt og en positiv tilgang. Jeg trives godt i samarbejde med andre og sætter pris på åben kommunikation, hvor man kan dele idéer, give feedback og løfte i flok. Jeg lægger vægt på at være til at stole på og gøre mig umage med de opgaver, jeg tager på mig.",
-    
   },
 
   designer: {
@@ -168,3 +241,103 @@ backButton.addEventListener("click", () => {
 
   backButton.style.display = "none";
 });
+
+// Animation
+// projekter til index
+
+// Animation
+// projekter til index
+
+const projectsSection = document.querySelector(".project-text + .all-projects");
+
+if (projectsSection) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.parentElement.classList.add("projects-visible");
+
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.2,
+    },
+  );
+
+  observer.observe(projectsSection);
+}
+
+/* =========================
+   PROGRAMS
+========================= */
+
+const programsSection = document.querySelector(".programs-section");
+
+if (programsSection) {
+  const programsObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("programs-visible");
+
+          programsObserver.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.2,
+    },
+  );
+
+  programsObserver.observe(programsSection);
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+const skillsSection = document.querySelector(".skills");
+
+if (skillsSection) {
+  const skillsObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("skills-visible");
+
+          skillsObserver.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.15,
+    },
+  );
+
+  skillsObserver.observe(skillsSection);
+}
+
+// kontakt
+
+const contactSection = document.querySelector(".contact");
+
+const contactObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        contactSection.classList.add("visible");
+        contactObserver.unobserve(contactSection);
+      }
+    });
+  },
+  {
+    threshold: 0.2,
+  },
+);
+
+if (contactSection) {
+  contactObserver.observe(contactSection);
+}
+
