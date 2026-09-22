@@ -111,17 +111,29 @@
 @media (max-width: 768px) {
 
     .navbar {
-        padding: 15px 20px;
+        
+        width: 305px;
     }
 
-    .logo img {
-        width: 105px;
+    /* .logo img {
+       width: 50px;
+        height: 50px;
+    } */
+
+    .navbar img {
+    
+       width: 50px;
+    height: 50px;
+    display: block;
+    object-fit: contain;
     }
 
     .navbar-links {
         gap: 25px;
         margin-right: 0;
         font-size: 14px;
+    
+      
     }
 
     .navbar-links a::after {
@@ -131,30 +143,7 @@
 
 }
 
-/* =========================
-   TABLET
-========================= */
 
-@media (max-width: 1024px) {
-
-    .navbar {
-        padding: 16px 30px;
-    }
-
-    .logo img {
-        width: 125px;
-    }
-
-    .navbar-links {
-        gap: 60px;
-        margin-right: 30px;
-        font-size: 16px;
-    }
-
-    .navbar-links a::after {
-        bottom: -7px;
-    }
-}
 
 /* -----------------------------Hero--------------------------- */
 body{
@@ -362,44 +351,25 @@ body{
     }
 
     .hero-text {
-        margin-top: 90px;
-        font-size: 50px;
+        margin-top: 50px;
+        font-size: 20px;
     }
 
     .hero-image {
         width: 280px;
-        top: -60px;
+        top: 20px;
+       
     }
 
     .hero-bg {
         height: 600px;
     }
+
+    .project-text h3 {
+        top: 400px;
+    }
 }
-/* =========================
-   TABLET
-========================= */
 
-@media (max-width: 1024px) {
-
-    .hero {
-        padding-top: 90px;
-    }
-
-    .hero-text {
-        margin-top: 120px;
-        font-size: var(--l-font-size);
-    }
-
-    .hero-image {
-        width: 400px;
-        top: -110px;
-    }
-
-    .hero-bg {
-        height: 750px;
-    }
-
-}
 
 /* -----------------------Projects Section------------------------- */
 
@@ -435,9 +405,7 @@ body{
 
 }
 
-.project-text h4 {
-  margin-top: -100px;
-}
+
 
 .project-text {
   text-align: center;
@@ -704,6 +672,7 @@ h4 {
     transition-delay: 1.1s;
 }
 
+
 /* =========================
    SKILLS CARDS
 ========================= */
@@ -748,6 +717,7 @@ h4 {
 /* =========================
    MOBIL
 ========================= */
+
 
 @media (max-width: 768px) {
 
@@ -796,7 +766,7 @@ h4 {
     .skills-card {
         width: 100%;
         min-height: auto;
-        padding: 25px 25px 15px;
+       
     }
 
     .skills-header {
@@ -831,78 +801,7 @@ h4 {
     }
 
 }
-/* =========================
-   TABLET
-========================= */
 
-@media (max-width: 1024px) {
-
-    /* PROGRAMS */
-
-    .programs-section {
-        padding-top: 25px;
-        padding-bottom: 5px;
-    }
-
-    .programs-section h2 {
-        font-size: var(--m-font-size);
-        margin-bottom: 45px;
-    }
-
-    .programs ul {
-        gap: 35px;
-        padding: 0 20px;
-    }
-
-    .programs img {
-        width: 45px;
-        height: 45px;
-    }
-
-
-    /* SKILLS */
-
-    .skills {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-        padding: 5px 25px 35px;
-    }
-
-    .skills-card {
-        padding: 25px 30px 15px;
-        min-height: 280px;
-    }
-
-    .skills-header {
-        gap: 20px;
-        margin-bottom: 25px;
-    }
-
-    .skills-header h3 {
-        font-size: var(--s-font-size);
-    }
-
-    .skills-icon {
-        width: 50px;
-    }
-
-    .skills-list {
-        column-gap: 25px;
-    }
-
-    .skills-list li {
-        padding-left: 32px;
-        margin-bottom: 20px;
-        font-size: var(--xs-font-size);
-    }
-
-    .skills-list li::before {
-        width: 22px;
-        height: 22px;
-        font-size: 13px;
-    }
-
-}
 
 /* ---------------------Footer----------------------- */
 footer {
@@ -938,7 +837,7 @@ footer {
     margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     .project-hint,
     .project-hint-1,
     .project-hint-3 {
@@ -1141,47 +1040,98 @@ footer {
 
 
 
-/* =========================
-   TABLET
-========================= */
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
 
-  .all-projects {
-    grid-template-columns: 1fr 1fr;
-  }
+    .all-projects {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 100%;
+        margin: 50px auto 100px;
+        padding: 0 20px;
+        justify-items: center;
+        gap: 30px;
+    }
 
+    .ovartaci-project-1,
+    .haze-project-2,
+    .nord-project-3 {
+        width: 320px;
+        max-width: 100%;
+        height: 550px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .product-ovartaci,
+    .product-haze,
+    .product-nord {
+        width: 100%;
+        height: 280px;
+        margin: 0 auto 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* iPad */
+    .ipad {
+        height: 200px;
+        max-width: 100%;
+    }
+
+    .ipad-img {
+        height: 200px;
+        max-width: 100%;
+    }
+
+    .screen-video-3 {
+        height: 200px;
+        max-width: 100%;
+    }
+
+    /* Laptop */
+    .laptop {
+        height: 200px;
+        max-width: 100%;
+    }
+
+    .pc-img {
+        height: 200px;
+        max-width: 100%;
+    }
+
+    /* TOUCHSKÆRM */
+    .touch {
+        position: relative;
+        height: 250px;
+        width: fit-content;
+        margin: 0 auto;
+        transform: none;
+    }
+
+    .touch-img {
+        height: 250px;
+        width: auto;
+        display: block;
+    }
+
+    .screen-video-2 {
+        position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+    z-index: 1;
+    }
+
+    .project-text {
+        padding-top: 20px;
+    }
 }
-
-
-/* =========================
-   MOBIL
-========================= */
-
-@media (max-width: 700px) {
-
-  .all-projects {
-    grid-template-columns: 1fr;
-    padding: 30px 20px;
-    
-  }
-
-  .project-text {
-    padding-top: 50px;
-  }
-
-  .product-ovartaci,
-  .product-haze,
-  .product-nord {
-    height: 300px;
-  }
-
-  .touch {
-    transform: scale(0.8);
-  }
-
-}
-
 
 /* --------------------------Kontakt---------------------------- */
 
@@ -1366,7 +1316,7 @@ footer {
    MOBIL
 ========================= */
 
-@media (max-width: 768px) {
+@media (max-width: 468px) {
 
     .contact-body {
         margin-top: 100px;
@@ -1609,7 +1559,7 @@ footer {
    MOBIL
 ========================= */
 
-@media (max-width: 768px) {
+@media (max-width: 468px) {
 
     .contact-img {
         animation-name: contactImageMobile;
@@ -2033,7 +1983,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  
   max-width: 250px;
   box-sizing: border-box;
   position: relative;
@@ -2159,7 +2109,7 @@ footer {
    RESPONSIVE
 ======================================== */
 
-@media (max-width: 1100px) {
+@media (max-width:400px) {
 
     .about-layers {
         grid-template-columns: 0.8fr 0.9fr 1.2fr;
@@ -2258,7 +2208,7 @@ footer {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
 
     .about-layers {
         padding: 45px 20px;
@@ -2461,4 +2411,23 @@ footer {
         align-items: center;
     }
 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
 }
