@@ -206,13 +206,13 @@
   position: relative;
   z-index: 2;
   pointer-events: none;
-  left: 480px;
+  
 }
 
 .screen-video-3 {
   position: absolute;
   top: 1%;
-  left: 480px; 
+  
   /* transform: translateX(50%);  */
 
   width: 550px;
@@ -1273,7 +1273,7 @@ body {
   width: fit-content;
   height: 600px;
   margin: 0 auto;
-  left: 480px;
+  
 }
 
 .touch-img {
