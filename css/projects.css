@@ -1951,3 +1951,298 @@ footer {
         display: none;
     }
 }
+
+@media (max-width: 768px) {
+
+    .screen-video-3,
+    .screen-video,
+    .screen-video-2 {
+        display: none;
+    }
+
+    .mobile-project-image {
+        display: block;
+    }
+
+    .ipad .mobile-project-image {
+        position: absolute;
+        top: 1px;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 30px;
+        z-index: 1;
+    }
+
+    .laptop .mobile-project-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .touch .mobile-project-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 18px;
+        z-index: 1;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        
+        width: 305px;
+    }
+
+    /* .logo img {
+       width: 50px;
+        height: 50px;
+    } */
+
+    .navbar img {
+    
+       width: 50px;
+    height: 50px;
+      visibility: hidden;
+    }
+
+    .navbar-links {
+        gap: 25px;
+        margin-right: 0;
+        font-size: 14px;
+    
+      
+    }
+
+    .navbar-links a::after {
+        bottom: -5px;
+        height: 1.5px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .all-projects {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 100%;
+        margin: 50px auto 100px;
+        padding: 0 20px;
+        justify-items: center;
+        gap: 30px;
+    }
+
+    .ovartaci-project-1,
+    .haze-project-2,
+    .nord-project-3 {
+        width: 320px;
+        max-width: 100%;
+        height: 550px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .product-ovartaci,
+    .product-haze,
+    .product-nord {
+        width: 100%;
+        height: 280px;
+        margin: 0 auto 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* iPad */
+    .ipad {
+        height: 200px;
+        max-width: 100%;
+    }
+
+    .ipad-img {
+        height: 200px;
+        max-width: 100%;
+    }
+
+    .screen-video-3, .mobile-project-image {
+        height: 200px;
+        max-width: 100%;
+    }
+
+    .desktop-video {
+    display: none;
+}
+
+.mobile-project-image {
+    display: block;
+}
+
+    /* Laptop */
+    .laptop {
+        height: 200px;
+        max-width: 100%;
+    }
+
+    .pc-img {
+        height: 200px;
+        max-width: 100%;
+    }
+
+    
+
+    /* TOUCHSKÆRM */
+    .touch {
+        position: relative;
+        height: 250px;
+        width: fit-content;
+        margin: 0 auto;
+        transform: none;
+    }
+
+    .touch-img {
+        height: 250px;
+        width: auto;
+        display: block;
+    }
+
+    .screen-video-2 {
+        position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+    z-index: 1;
+    }
+
+    .project-text {
+        padding-top: 20px;
+    }
+
+    .desktop-video {
+    display: none;
+}
+
+.mobile-project-image {
+    display: block;
+    position: absolute;
+    object-fit: cover;
+}
+}
+@media (max-width: 768px) {
+
+    /* Skjul alle videoer på mobil */
+    .screen-video-3,
+    .screen-video,
+    .screen-video-2 {
+        display: none;
+    }
+
+    /* Vis billeder på mobil */
+    .mobile-project-image {
+        display: block;
+    }
+
+
+    /* iPad */
+    .ipad .mobile-project-image {
+        position: absolute;
+        top: 1px;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 30px;
+        z-index: 1;
+    }
+
+
+    /* Laptop */
+.laptop {
+    position: relative;
+    height: 200px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.pc-img {
+    height: 200px;
+    width: auto;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+/* Selve området inde i laptop-skærmen */
+.laptop .screen {
+    position: absolute;
+    top: 4%;
+    left: 10%;
+    width: 80%;
+    height: 90%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* Skjul video på mobil */
+.laptop .screen-video {
+    display: none;
+}
+
+/* Vis billede inde i skærmen */
+.laptop .mobile-project-image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+    /* Touchskærm */
+    .touch .mobile-project-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 18px;
+        z-index: 1;
+    }
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
