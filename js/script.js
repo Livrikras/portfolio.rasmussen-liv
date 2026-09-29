@@ -207,40 +207,30 @@ buttons.forEach((button) => {
    TILBAGE TIL START
 ========================= */
 
-backButton.addEventListener("click", () => {
-  /* Fjern active fra alle lag */
+if (backButton) {
+  backButton.addEventListener("click", () => {
+    buttons.forEach((button) => {
+      button.classList.remove("active");
+    });
 
-  buttons.forEach((button) => {
-    button.classList.remove("active");
+    image.classList.add("change");
+
+    setTimeout(() => {
+      image.src = "img/ab-me1.png";
+
+      number.textContent = "";
+
+      title.textContent = "Lær mig at kende";
+
+      text.textContent =
+        "Som person og multimediedesigner har jeg mange lag som du kan dykke ned i.";
+
+      image.classList.remove("change");
+    }, 250);
+
+    backButton.style.display = "none";
   });
-
-  /* Fade billedet ud */
-
-  image.classList.add("change");
-
-  setTimeout(() => {
-    /* Tilbage til startbilledet */
-
-    image.src = "img/ab-me1.png";
-
-    /* Tilbage til startteksten */
-
-    number.textContent = "";
-
-    title.textContent = "Lær mig at kende";
-
-    text.textContent =
-      "Som person og multimediedesigner har jeg mange lag som du kan dykke ned i.";
-
-    /* Fade ind */
-
-    image.classList.remove("change");
-  }, 250);
-
-  /* Skjul tilbage-knappen */
-
-  backButton.style.display = "none";
-});
+}
 
 // Animation
 // projekter til index
@@ -339,5 +329,58 @@ const contactObserver = new IntersectionObserver(
 
 if (contactSection) {
   contactObserver.observe(contactSection);
+}
+
+
+
+// ---------- Spilcafé -----------------
+
+const mobile = document.querySelector(".mobile");
+const spilVideo = document.querySelector(".spil-video");
+
+if (mobile && spilVideo) {
+
+    mobile.addEventListener("mouseenter", () => {
+
+        spilVideo.currentTime = 0;
+
+        spilVideo.play();
+
+    });
+
+    mobile.addEventListener("mouseleave", () => {
+
+        spilVideo.pause();
+        spilVideo.currentTime = 0;
+
+    });
+
+}
+
+/* =================================
+   SPILCAFÉ SCROLL ANIMATION
+================================= */
+
+const spilElements = document.querySelectorAll(
+  ".spil-1, .haze-2, .haze-3, .haze-4, .link-haze"
+);
+
+if (spilElements.length > 0) {
+  const spilObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+    }
+  );
+
+  spilElements.forEach((element) => {
+    spilObserver.observe(element);
+  });
 }
 

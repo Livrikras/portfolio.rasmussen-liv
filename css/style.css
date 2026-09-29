@@ -987,7 +987,7 @@ footer {
 /* Selve boksene */
 .ovartaci-project-1,
 .haze-project-2,
-.nord-project-3 {
+.nord-project-3, .spil-project-4 {
   
    width: 450px;
   height: 620px;
@@ -1019,7 +1019,7 @@ footer {
 /* Hover på hele projektboksen */
 .ovartaci-project-1:hover,
 .haze-project-2:hover,
-.nord-project-3:hover {
+.nord-project-3:hover, .spil-project-4:hover {
   transform: translateY(-6px);
 
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
@@ -1027,7 +1027,7 @@ footer {
 
 .product-ovartaci,
 .product-haze,
-.product-nord {
+.product-nord, .product-spil {
   height: 350px;
  
 
@@ -1042,7 +1042,7 @@ footer {
 
 .ovartaci-project-1 > a:last-child,
 .haze-project-2 > a:last-child,
-.nord-project-3 > a:last-child {
+.nord-project-3 > a:last-child, .spil-project-4 > a:last-child {
     margin-top: auto;
 }
 
@@ -1071,7 +1071,7 @@ footer {
 
     .ovartaci-project-1,
     .haze-project-2,
-    .nord-project-3 {
+    .nord-project-3, .spil-project-4 {
         width: 320px;
         max-width: 100%;
         height: 550px;
@@ -1081,7 +1081,7 @@ footer {
 
     .product-ovartaci,
     .product-haze,
-    .product-nord {
+    .product-nord, .product-spil {
         width: 100%;
         height: 280px;
         margin: 0 auto 15px;
@@ -1172,7 +1172,7 @@ footer {
     /* Skjul alle videoer på mobil */
     .screen-video-3,
     .screen-video,
-    .screen-video-2 {
+    .screen-video-2, .screen-video-4 {
         display: none;
     }
 
@@ -1217,10 +1217,395 @@ footer {
         z-index: 1;
     }
 
+    /* SPILCAFÉ */
+
+.spil-project-4 {
+    width: 320px;
+    max-width: 100%;
+    height: 550px;
+    padding: 20px;
+}
+
+.product-spil {
+    width: 100%;
+    height: 280px;
+    margin: 0 auto 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile {
+    height: 200px;
+}
+
+.mobile-img {
+    height: 200px;
+}
+
+/* Skjul video på mobil */
+.spil-screen-video {
+    display: none;
+}
+
+/* Vis startbillede på mobil */
+.mobile .mobile-project-image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+/* ------------------
+   SPILCAFÉ - MOBIL
+------------------ */
+
+.spil-project-4 {
+    width: 320px;
+    max-width: 100%;
+    height: 550px;
+    padding: 20px;
+}
+
+.product-spil {
+    width: 100%;
+    height: 280px;
+    margin: 0 auto 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile {
+    height: 200px;
+}
+
+.mobile-img {
+    height: 200px;
+}
+
+/* Skjul video på mobil */
+.screen-video-4 {
+    display: none;
+}
+
+/* Vis billede på mobil */
+.mobile .mobile-project-image {
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    border-radius: 20px;
+
+    z-index: 1;
+}
     
 }
 
+/* ------------------ projekt 4 - spilcafé ------------------ */
 
+.mobile {
+    position: relative;
+    width: fit-content;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.mobile-img {
+    display: block;
+    height: 250px;
+    width: auto;
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.mobile .screen {
+    position: absolute;
+    top: 3.5%;
+    left: 6.5%;
+    width: 87%;
+    height: 93%;
+    overflow: hidden;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.spil-screen-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+
+.mobile .mobile-project-image {
+    display: none;
+}
+
+/* ------------------
+   SPILCAFÉ PREVIEW
+------------------ */
+
+.mobile {
+    position: relative;
+    width: fit-content;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.mobile-img {
+    display: block;
+    height: 250px;
+    width: auto;
+
+    position: relative;
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+.mobile .screen {
+    position: absolute;
+
+    top: 3.5%;
+    left: 6.5%;
+
+    width: 87%;
+    height: 93%;
+
+    overflow: hidden;
+    border-radius: 20px;
+
+    z-index: 1;
+}
+
+.screen-video-4 {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+
+    border-radius: 20px;
+}
+
+.mobile .mobile-project-image {
+    display: none;
+}
+
+/* =========================================
+   SPILCAFÉ - PROJEKT 4
+========================================= */
+
+.spil-project-4 {
+    width: 450px;
+    height: 620px;
+
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.spil-project-4:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Området med telefonen */
+
+.spil-project-4 .product-spil {
+    height: 350px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 15px;
+    flex-shrink: 0;
+}
+
+
+/* Telefon */
+
+.spil-project-4 .mobile {
+    position: relative;
+    width: fit-content;
+    height: 250px;
+    margin: 0 auto;
+}
+
+
+/* Telefonrammen */
+
+.spil-project-4 .mobile-img {
+    display: block;
+
+    height: 250px;
+    width: auto;
+
+    position: relative;
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+/* Skærmen inde i telefonen */
+
+.spil-project-4 .screen {
+    position: absolute;
+
+    top: 3.5%;
+    left: 6.5%;
+
+    width: 87%;
+    height: 93%;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    z-index: 1;
+}
+
+
+/* Video */
+
+.spil-project-4 .screen-video-4 {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 20px;
+
+    z-index: 1;
+}
+
+
+/* Billede - skjult på desktop */
+
+.spil-project-4 .mobile-project-image {
+    display: none;
+}
+
+
+/* Linket i bunden */
+
+.spil-project-4 > a:last-child {
+    margin-top: auto;
+}
+
+
+/* =========================================
+   MOBIL
+========================================= */
+
+@media (max-width: 768px) {
+
+    .spil-project-4 {
+        width: 320px;
+        max-width: 100%;
+        height: 550px;
+        padding: 20px;
+    }
+
+    .spil-project-4 .product-spil {
+        width: 100%;
+        height: 280px;
+
+        margin: 0 auto 15px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* Telefon */
+
+    .spil-project-4 .mobile {
+        height: 250px;
+    }
+
+    .spil-project-4 .mobile-img {
+        height: 250px;
+        width: auto;
+    }
+
+
+    /* Skærm */
+
+    .spil-project-4 .screen {
+        top: 3.5%;
+        left: 6.5%;
+
+        width: 87%;
+        height: 93%;
+    }
+
+
+    /* Skjul video på mobil */
+
+    .spil-project-4 .screen-video-4 {
+        display: none;
+    }
+
+
+    /* Vis billede på mobil */
+
+    .spil-project-4 .mobile-project-image {
+        display: block;
+
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+        border-radius: 20px;
+
+        z-index: 1;
+    }
+}
 
 /* --------------------------Kontakt---------------------------- */
 
